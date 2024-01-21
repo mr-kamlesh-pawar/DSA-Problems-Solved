@@ -1,0 +1,5 @@
+The code you provided seems to have a few syntax errors and indentation 
+issues. I assume you want to read a file named "hii.txt" 
+and count the occurrences of
+ each character, including newline characters.
+ Here's the corrected version of your code
