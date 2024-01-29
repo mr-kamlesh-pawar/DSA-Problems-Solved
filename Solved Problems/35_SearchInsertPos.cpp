@@ -26,31 +26,38 @@ public:
 int pos=0;
 
  int searchInsert(vector<int> &nums, int target){
- for(int i=0; i<nums.size(); i++){
-  if(target==nums[i]){
-    pos=i;
-    break;
+ int start=0;
+ int end= nums.size()-1;
+  int mid;
+ for(int i= start; start<=end; i++){
+  mid= (start+end)/2;
+
+  if(target == nums[mid]){
+return mid;
   }
 
-  if((nums[i]<target && nums[i+1]>target)|| (nums[i]<target && i+1==si)){
-    
-    pos=i+1;
-    break;
+  if(nums[mid]<target){
+   start = mid+1;
   }
 
- }
+  if(nums[mid]>target){
+    end=mid-1;
 
-return pos;
+  }
 
+
+ 
  }
+ 
+ return start; } 
 
 }a;
 
 int main(){
-    int si=nums.size();
-    int targ=7;
-    vector<int> nums={1,3,5,6};
-    cout<<a.searchInsert(nums,targ);
+
+    int target=4;
+    vector<int> nums={1,3,5,6,44};
+    cout<<a.searchInsert(nums,target);
 
     return 0;
 }
