@@ -1,4 +1,5 @@
 public class isPowerOfTwo {
+    //isPoweroftwo
 
     boolean isPowoftwo(int n){
         if(n==0)
