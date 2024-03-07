@@ -22,6 +22,8 @@ class Solution{
 
 }sol;
 
+//main function
+
 int main(){
     string ss= "  hello world   ";
     cout<<sol.lastwordlength(ss);
