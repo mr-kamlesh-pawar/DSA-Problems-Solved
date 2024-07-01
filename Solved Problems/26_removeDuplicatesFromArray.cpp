@@ -34,3 +34,6 @@ solution sol;
     return 0;
 }
 
+
+//output
+//
