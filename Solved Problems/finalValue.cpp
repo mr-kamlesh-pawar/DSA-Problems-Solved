@@ -43,15 +43,16 @@ using namespace std;
     int finalval(vector<string>& op){
         int count=0;
         for(int i=0; i<op.size(); i++){
-            if(){
+            if((op[i]=="X++") || (op[i]=="++X")){
+                count++;
 
             }
 
-            if(){
-
+            if((op[i]=="X--") || (op[i]=="--X")){
+                count--;
             }
-            return count;
         }
+            return count;
     }
 
  };
@@ -59,7 +60,8 @@ using namespace std;
  int main(){
 
     sol s;
-    vector<string> op={"X++","++X,--X, X--"};
-    int res= finalval(op);
+    vector<string> opp={"X++","++X","--X","X--"};
+    int res= s.finalval(opp);
+    cout<<res;
     return 0;
  }
