@@ -4,18 +4,7 @@ import java.util.Set;
 public class HappyNumber {
 
     public static boolean isHappy(int n){
-        // int sum=0; int temp=0;
-        // Set<Integer> seen= new HashSet<>();
-        // while(!seen.contains(n)){
-        //     seen.contains(n);
-        //     while(n!=0){
-        //         temp= n%10;
-        //         sum= sum+temp*10;
-        //         n=n/10;
-        //     }
-        //     n=sum;
-        // }
-        // return n==1;
+       
 
         Set<Integer> seen= new HashSet<>();
         while(true){
