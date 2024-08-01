@@ -7,8 +7,6 @@
 
 // A pair (i, j) is called good if nums[i] == nums[j] and i < j.
 
- 
-
 // Example 1:
 
 // Input: nums = [1,2,3,1,1,3]
@@ -23,40 +21,39 @@
 
 // Input: nums = [1,2,3]
 // Output: 0
- 
 
 // Constraints:
 
 // 1 <= nums.length <= 100
 // 1 <= nums[i] <= 100
 
-
-#include<iostream>
+#include <iostream>
 #include <vector>
 using namespace std;
 
-class sol{
-    public:
-    int goodpair(vector<int> &nums){
-        int count=0;
-        for(int i=0; i<nums.size(); i++){
-            for(int j=0; j<nums.size(); j++){
-                if((nums[i]==nums[j]) && (i<j))    
+class sol
+{
+public:
+    int goodpair(vector<int> &nums)
+    {
+        int count = 0;
+        for (int i = 0; i < nums.size(); i++)
+        {
+            for (int j = 0; j < nums.size(); j++)
+            {
+                if ((nums[i] == nums[j]) && (i < j))
                     count++;
             }
         }
         return count;
     }
-
-
-
 };
 
-int main(){
-    vector<int> nums={1,2,3,1,1,3};
+int main()
+{
+    vector<int> nums = {1, 2, 3, 1, 1, 3};
     sol s;
-    int ans =s.goodpair(nums);
-    cout<<ans<<endl;
-
+    int ans = s.goodpair(nums);
+    cout << ans << endl;
     return 0;
 }
