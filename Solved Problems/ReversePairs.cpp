@@ -1,3 +1,8 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 class Solution {
     void merge(vector<int> &nums, int low, int mid, int high) {
         int *temp = new int[high - low + 1];
@@ -52,3 +57,13 @@ public:
     }
 };
 
+int main() {
+    Solution solution;
+    vector<int> nums = {2,4,3,5,1};  
+    
+    int reversePairCount = solution.reversePairs(nums);
+    
+    cout << "Number of reverse pairs: " << reversePairCount << endl;
+    
+    return 0;
+}
