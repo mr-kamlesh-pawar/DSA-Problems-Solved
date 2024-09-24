@@ -7,7 +7,7 @@ class Solution
 public:
     int merge(vector<long long> &arr, int low, int mid, int high)
     {
-        vector<int> temp;
+        vector<long long> temp;
         int left = low;
         int right = mid + 1;
         int cnt = 0;
