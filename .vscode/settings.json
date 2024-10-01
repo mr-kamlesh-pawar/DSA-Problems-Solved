@@ -60,6 +60,7 @@
   "CodeGPT.Autocomplete.enabled": true,
   "files.associations": {
     "*.embeddedhtml": "html",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "string": "cpp"
   }
 }
